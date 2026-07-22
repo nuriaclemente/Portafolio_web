@@ -1,29 +1,35 @@
-/* ==========================================
-   APARICIÓN SUAVE DE LOS ELEMENTOS
-========================================== */
+const images=document.querySelectorAll(".project img");
 
-const elements = document.querySelectorAll(
-    ".project, .about, footer"
-);
+const lightbox=document.getElementById("lightbox");
 
-const observer = new IntersectionObserver((entries) => {
+const lightboxImg=document.getElementById("lightbox-img");
 
-    entries.forEach(entry => {
+const close=document.getElementById("close");
 
-        if(entry.isIntersecting){
+images.forEach(image=>{
 
-            entry.target.classList.add("show");
+image.addEventListener("click",()=>{
 
-        }
+lightbox.classList.add("active");
 
-    });
+lightboxImg.src=image.src;
 
-},{
-    threshold:0.15
 });
 
-elements.forEach(element => {
+});
 
-    observer.observe(element);
+close.addEventListener("click",()=>{
+
+lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click",(e)=>{
+
+if(e.target===lightbox){
+
+lightbox.classList.remove("active");
+
+}
 
 });
