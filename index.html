@@ -8,10 +8,12 @@
 
     <title>Yuya Visuals</title>
 
+    <meta name="description" content="Portfolio de visualización arquitectónica de Yuya Visuals.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,79 +23,170 @@
 
 <header>
 
-    <div>
+    <div class="brand">
 
-        <h1>Yuya Visuals</h1>
+        <a href="#">Yuya Visuals</a>
 
         <p>Visualización Arquitectónica</p>
 
     </div>
 
-    <div class="contact">
+    <nav>
 
-        <a href="mailto:tuemail@gmail.com">Email</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
 
-        <a href="#">Instagram</a>
-
-    </div>
+    </nav>
 
 </header>
 
-
-
 <main>
 
-<section class="project">
+<section class="gallery">
 
-<h2>Casa Olivo</h2>
+    <!-- CASA OLIVO -->
 
-<img src="images/casa-olivo/01.jpg" alt="">
-<img src="images/casa-olivo/02.jpg" alt="">
-<img src="images/casa-olivo/03.jpg" alt="">
-<img src="images/casa-olivo/04.jpg" alt="">
+    <article class="item">
+
+        <img src="images/casa-olivo/01.jpg" alt="Casa Olivo">
+
+        <div class="overlay">
+
+            <h2>Casa Olivo</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item tall">
+
+        <img src="images/casa-olivo/02.jpg" alt="Casa Olivo">
+
+        <div class="overlay">
+
+            <h2>Casa Olivo</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item wide">
+
+        <img src="images/casa-olivo/03.jpg" alt="Casa Olivo">
+
+        <div class="overlay">
+
+            <h2>Casa Olivo</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item">
+
+        <img src="images/casa-olivo/04.jpg" alt="Casa Olivo">
+
+        <div class="overlay">
+
+            <h2>Casa Olivo</h2>
+
+        </div>
+
+    </article>
+
+    <!-- CASA MADRID -->
+
+    <article class="item">
+
+        <img src="images/casa-madrid/01.jpg" alt="Casa Madrid">
+
+        <div class="overlay">
+
+            <h2>Casa Madrid</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item wide">
+
+        <img src="images/casa-madrid/02.jpg" alt="Casa Madrid">
+
+        <div class="overlay">
+
+            <h2>Casa Madrid</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item">
+
+        <img src="images/casa-madrid/03.jpg" alt="Casa Madrid">
+
+        <div class="overlay">
+
+            <h2>Casa Madrid</h2>
+
+        </div>
+
+    </article>
+
+    <article class="item tall">
+
+        <img src="images/casa-madrid/04.jpg" alt="Casa Madrid">
+
+        <div class="overlay">
+
+            <h2>Casa Madrid</h2>
+
+        </div>
+
+    </article>
 
 </section>
 
+<section id="about">
 
+    <h3>Sobre mí</h3>
 
-<section class="project">
+    <p>
 
-<h2>Casa Madrid</h2>
+        Soy arquitecta especializada en visualización arquitectónica, diseño y herramientas de inteligencia artificial. Mi trabajo se centra en comunicar proyectos mediante imágenes con una fuerte carga narrativa y estética.
 
-<img src="images/casa-madrid/01.jpg" alt="">
-<img src="images/casa-madrid/02.jpg" alt="">
-<img src="images/casa-madrid/03.jpg" alt="">
-<img src="images/casa-madrid/04.jpg" alt="">
+    </p>
 
 </section>
 
+<footer id="contact">
 
+    <a href="mailto:tuemail@email.com">
 
-<footer>
+        Email
 
-<p>
+    </a>
 
-Arquitecta especializada en visualización arquitectónica.
+    <a href="#">
 
-</p>
+        Instagram
 
-<p>
+    </a>
 
-<a href="mailto:tuemail@gmail.com">Email</a>
+    <a href="#">
 
-</p>
+        LinkedIn
+
+    </a>
 
 </footer>
 
 </main>
 
+<div class="lightbox">
 
+    <span class="close">&times;</span>
 
-<div id="lightbox">
-
-<span id="close">&times;</span>
-
-<img id="lightbox-img">
+    <img src="" alt="">
 
 </div>
 
